@@ -1,11 +1,11 @@
 const quizData = [
   {
-    question: "ツバメが低く飛ぶと雨が降る　⚪︎か×か？",
+    question: "フェルマーの最終定理を証明したのは誰？",
     choices: [
-      { text: "⚪︎" },
-      { text: "×" },
-      { text: "" },
-      { text: "" },
+      { text: "アンドリュー・ワイルズ" },
+      { text: "ラマヌジャン" },
+      { text: "コラッツ" },
+      { text: "アイザック・ニュートン" },
     ],
     correct: 0,
   },
