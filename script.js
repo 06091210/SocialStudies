@@ -56,10 +56,10 @@ function checkAnswer(selected, questionData) {
   const choicesContainer = document.getElementById("choices-container");
   choicesContainer.innerHTML = "";
   if (selected === questionData.correct) {
-    resultText.innerHTML = "<span class='correct'>正解！</span>";
+    resultText.innerHTML = "<span class='correct'>正解</span>";
     score++;
   } else {
-    resultText.innerHTML = "<span class='wrong'>不正解です。</span>";
+    resultText.innerHTML = "<span class='wrong'>不正解</span>";
   }
   if (currentQuestion === currentQuiz.length - 1) {
     document.getElementById("next-question").textContent = "結果を見る";
@@ -71,7 +71,7 @@ function nextQuestion() {
   currentQuestion++;
   if (currentQuestion < currentQuiz.length) {
     loadQuestion();
-    document.getElementById("container").scrollIntoView({ behavior: "smooth" }); // containerにスクロール
+    document.getElementById("container").scrollIntoView({ behavior: "smooth" });
   } else {
     showResult();
   }
