@@ -1,3 +1,15 @@
+function Quiz(Q,T1,T2,T3,T4,N) {
+  {
+    question: Q,
+    choices: [
+      { text: T1 },
+      { text: T2 },
+      { text: T3 },
+      { text: T4 },
+    ],
+    correct: N,
+  }
+}
 const quizData = [
   {
     question: "フェルマーの最終定理を証明したのは誰？",
@@ -9,6 +21,7 @@ const quizData = [
     ],
     correct: 0,
   },
+  Quiz("次のうち，存在しない数学者は誰？","ピエール・ド・フェルマー","関孝和","菅原道真","リーマン"),
 ];
 let currentQuiz = quizData;
 let currentQuestion = 0;
