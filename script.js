@@ -8,7 +8,7 @@ const quizData = [
       { text: "アイザック・ニュートン" },
     ],
     correct: 0,
-  }
+  },
 ];
 let currentQuiz = quizData;
 let currentQuestion = 0;
