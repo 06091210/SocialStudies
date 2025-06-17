@@ -9,6 +9,16 @@ const quizData = [
     ],
     correct: 0,
   },
+  {
+    question: "次のうち，存在しない数学者は誰？",
+    choices: [
+      { text: "ピエール・ド・フェルマー" },
+      { text: "関孝和" },
+      { text: "菅原道真" },
+      { text: "リーマン" },
+    ],
+    correct: 2,
+  },
 ];
 let currentQuiz = quizData;
 let currentQuestion = 0;
@@ -46,10 +56,10 @@ function checkAnswer(selected, questionData) {
   const choicesContainer = document.getElementById("choices-container");
   choicesContainer.innerHTML = "";
   if (selected === questionData.correct) {
-    resultText.innerHTML = "<span class='correct'>正解</span>";
+    resultText.innerHTML = "<span class='correct'>正解！</span>";
     score++;
   } else {
-    resultText.innerHTML = "<span class='wrong'>不正解</span>";
+    resultText.innerHTML = "<span class='wrong'>不正解です。</span>";
   }
   if (currentQuestion === currentQuiz.length - 1) {
     document.getElementById("next-question").textContent = "結果を見る";
@@ -73,7 +83,7 @@ function showResult() {
   const percentage = (score / currentQuiz.length) * 100;
   document.getElementById("score").textContent = `正解数: ${score}/${
     currentQuiz.length
-  } (${percentage.toFixed(1)}%)`;
+  } (${percentage.toFixed(2)}%)`;
 }
 function restartQuiz() {
   currentQuestion = 0;
