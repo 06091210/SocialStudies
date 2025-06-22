@@ -73,6 +73,26 @@ const quizData = [
     ],
     correct: 0,
   },
+  {
+    question: "清がアヘンを厳しく取り締まったためにイギリスが1840年に起こした戦争は？",
+    choices: [
+      { text: "英清戦争" },
+      { text: "西南戦争" },
+      { text: "アヘン戦争" },
+      { text: "英清アヘン戦争" },
+    ],
+    correct: 2,
+  },
+  {
+    question: "",
+    choices: [
+      { text: "" },
+      { text: "" },
+      { text: "" },
+      { text: "" },
+    ],
+    correct: ,
+   },
 ];
 let currentQuiz = quizData;
 let currentQuestion = 0;
