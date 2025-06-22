@@ -129,7 +129,7 @@ function showResult() {
   const percentage = (score / currentQuiz.length) * 100;
   document.getElementById("score").textContent = `正解数: ${score}/${
     currentQuiz.length
-  } (${percentage.toFixed(7)}%)`;
+  } (${percentage.toFixed(quizData.length)}%)`;
 }
 function restartQuiz() {
   currentQuestion = 0;
